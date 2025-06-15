@@ -1,0 +1,369 @@
+:root {
+  /* @link https://utopia.fyi/type/calculator/?c=360,16,1.2,1366,22,1.25,9,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|6,s-l&g=s,l,xl,12 */
+
+  /* Step -2: 11.1111px → 14.08px */
+  --size-step--2: clamp(0.6944rem, 0.628rem + 0.2951vi, 0.88rem);
+  /* Step -1: 13.3333px → 17.6px */
+  --size-step--1: clamp(0.8333rem, 0.7379rem + 0.4241vi, 1.1rem);
+  /* Step 0: 16px → 22px */
+  --size-step-0: clamp(1rem, 0.8658rem + 0.5964vi, 1.375rem);
+  /* Step 1: 19.2px → 27.5px */
+  --size-step-1: clamp(1.2rem, 1.0144rem + 0.825vi, 1.7188rem);
+  /* Step 2: 23.04px → 34.375px */
+  --size-step-2: clamp(1.44rem, 1.1865rem + 1.1267vi, 2.1484rem);
+  /* Step 3: 27.648px → 42.9688px */
+  --size-step-3: clamp(1.728rem, 1.3853rem + 1.5229vi, 2.6855rem);
+  /* Step 4: 33.1776px → 53.7109px */
+  --size-step-4: clamp(2.0736rem, 1.6144rem + 2.0411vi, 3.3569rem);
+  /* Step 5: 39.8131px → 67.1387px */
+  --size-step-5: clamp(2.4883rem, 1.8772rem + 2.7163vi, 4.1962rem);
+  /* Step 6: 47.7757px → 83.9233px */
+  --size-step-6: clamp(2.986rem, 2.1775rem + 3.5932vi, 5.2452rem);
+  /* Step 7: 57.3309px → 104.9042px */
+  --size-step-7: clamp(3.5832rem, 2.5192rem + 4.729vi, 6.5565rem);
+  /* Step 8: 68.7971px → 131.1302px */
+  --size-step-8: clamp(4.2998rem, 2.9057rem + 6.1961vi, 8.1956rem);
+  /* Step 9: 82.5565px → 163.9128px */
+  --size-step-9: clamp(5.1598rem, 3.3402rem + 8.0871vi, 10.2445rem);
+
+  /* @link https://utopia.fyi/space/calculator?c=360,16,1.2,1366,22,1.25,9,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12*/
+
+  /* Space 3xs: 4px → 6px */
+  --space-3xs: clamp(0.25rem, 0.2053rem + 0.1988vi, 0.375rem);
+  /* Space 2xs: 8px → 11px */
+  --space-2xs: clamp(0.5rem, 0.4329rem + 0.2982vi, 0.6875rem);
+  /* Space xs: 12px → 17px */
+  --space-xs: clamp(0.75rem, 0.6382rem + 0.497vi, 1.0625rem);
+  /* Space s: 16px → 22px */
+  --space-s: clamp(1rem, 0.8658rem + 0.5964vi, 1.375rem);
+  /* Space m: 24px → 33px */
+  --space-m: clamp(1.5rem, 1.2987rem + 0.8946vi, 2.0625rem);
+  /* Space l: 32px → 44px */
+  --space-l: clamp(2rem, 1.7316rem + 1.1928vi, 2.75rem);
+  /* Space xl: 48px → 66px */
+  --space-xl: clamp(3rem, 2.5974rem + 1.7893vi, 4.125rem);
+  /* Space 2xl: 64px → 88px */
+  --space-2xl: clamp(4rem, 3.4632rem + 2.3857vi, 5.5rem);
+  /* Space 3xl: 96px → 132px */
+  --space-3xl: clamp(6rem, 5.1948rem + 3.5785vi, 8.25rem);
+
+  /* One-up pairs */
+  /* Space 3xs-2xs: 4px → 11px */
+  --space-3xs-2xs: clamp(0.25rem, 0.0934rem + 0.6958vi, 0.6875rem);
+  /* Space 2xs-xs: 8px → 17px */
+  --space-2xs-xs: clamp(0.5rem, 0.2987rem + 0.8946vi, 1.0625rem);
+  /* Space xs-s: 12px → 22px */
+  --space-xs-s: clamp(0.75rem, 0.5263rem + 0.994vi, 1.375rem);
+  /* Space s-m: 16px → 33px */
+  --space-s-m: clamp(1rem, 0.6198rem + 1.6899vi, 2.0625rem);
+  /* Space m-l: 24px → 44px */
+  --space-m-l: clamp(1.5rem, 1.0527rem + 1.9881vi, 2.75rem);
+  /* Space l-xl: 32px → 66px */
+  --space-l-xl: clamp(2rem, 1.2396rem + 3.3797vi, 4.125rem);
+  /* Space xl-2xl: 48px → 88px */
+  --space-xl-2xl: clamp(3rem, 2.1054rem + 3.9761vi, 5.5rem);
+  /* Space 2xl-3xl: 64px → 132px */
+  --space-2xl-3xl: clamp(4rem, 2.4791rem + 6.7594vi, 8.25rem);
+  /* Space 3xl-4xl: 96px → 132px */
+  --space-3xl-4xl: clamp(6rem, 5.1948rem + 3.5785vi, 8.25rem);
+
+  /* Custom pairs */
+  /* Space s-l: 16px → 44px */
+  --space-s-l: clamp(1rem, 0.3738rem + 2.7833vi, 2.75rem);
+
+  /* Colors */
+  /* @link https://mdigi.tools/color-shades/#111111 */
+  --color-dark: #0d0d0d;
+  --color-light: #f2f2f2;
+  --color-light-shade: #d9d9d9;
+  --color-global-text: var(--color-dark);
+  --color-global-background: var(--color-light);
+  --color-global-footer: var(--color-light-shade);
+
+  --font-sans-serif: "Atkinson Hyperlegible", system-ui, sans-serif;
+
+  --focus-ring-color: var(--color-global-text);
+  --focus-ring-offset: 0.2lh;
+  --focus-ring-style: solid;
+  --focus-ring-width: 2px;
+
+  --global-body-min-height: 100vh;
+  --global-body-line-height: 1.5;
+  --global-body-font-family: var(--font-sans-serif);
+  --global-body-font-size: var(--size-step-0);
+  --global-body-font-size-adjust: from-font;
+  --global-body-margin: 0;
+  --global-body-background-color: var(--color-global-background);
+  --global-body-text-color: var(--color-global-text);
+  --global-h1-font-size: var(--size-step-7);
+  --global-h1-font-feature-settings: "cpsp" on;
+  --global-h1-kerning: -0.04ch;
+  --global-h1-line-height: 1;
+  --global-h1-overflow-wrap: anywhere;
+  --global-h1-text-wrap: balance;
+  --global-h1-measuring: 20ch;
+  --global-a-text-underline-offset: 0.2ex;
+  --global-a-color: currentColor;
+  --global-a-text-decoration-line: underline;
+  --global-a-font-weight: 400;
+  --global-ul-list-style-type: disc;
+  --global-ul-list-padding-inline-start: 1.75ch;
+  --global-list-elements-flow: 0.5em;
+  --global-ul-marker-font-size: 2.2ex;
+  --global-ul-marker-line-height: 1;
+  --global-ol-marker-font-size: 1em;
+  --global-ol-marker-font-weight: 700;
+  --global-footer-background-color: var(--color-light-shade);
+  --global-footer-text-color: var(--color-dark);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+:where(body, h1, h2, h3, h4, p, figure, blockquote, dl, dd) {
+  margin-block: 0;
+}
+
+body {
+  min-height: var(--global-body-min-height);
+  line-height: var(--global-body-line-height);
+  font-family: var(--global-body-font-family);
+  font-size: var(--global-body-font-size);
+  font-size-adjust: var(--global-body-font-size-adjust);
+  margin: var(--global-body-margin);
+  background-color: var(--global-body-background-color);
+  color: var(--global-body-text-color);
+}
+
+h1 {
+  font-size: var(--global-h1-font-size);
+  font-feature-settings: var(--global-h1-font-feature-settings);
+  letter-spacing: var(--global-h1-kerning);
+  line-height: var(--global-h1-line-height);
+  overflow-wrap: var(--global-h1-overflow-wrap);
+  text-wrap: var(--global-h1-text-wrap);
+  max-width: var(--global-h1-measuring);
+}
+
+a {
+  text-decoration-line: var(--global-a-text-decoration-line);
+  text-underline-offset: var(--global-a-text-underline-offset);
+  color: var(--global-a-color);
+  font-weight: var(--global-a-font-weight);
+}
+
+a:not([class]):hover {
+  text-decoration-thickness: 3px;
+}
+
+:is(ol, ul) {
+  margin-block-end: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+ul {
+  list-style-type: var(--global-ul-list-style-type);
+  padding-inline-start: var(--global-ul-list-padding-inline-start);
+}
+
+ol {
+  padding-inline-start: var(
+    --global-ol-list-padding,
+    var(--global-ul-list-padding-inline-start)
+  );
+}
+
+:is(ol, ul, dl):where(:not([class])) > li + li {
+  margin-block-start: var(--global-list-elements-flow);
+}
+
+:is(ol, ul, dl):where(:not([class])) :is(ol, ul, dl) {
+  margin-block-start: var(--global-list-elements-flow);
+}
+
+ul ::marker {
+  font-size: var(--global-ul-marker-font-size);
+  line-height: var(--global-ul-marker-line-height);
+}
+
+ol ::marker {
+  font-size: var(--global-ol-marker-font-size);
+  font-weight: var(--global-ol-marker-font-weight);
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:focus {
+  outline-color: var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+  outline-style: var(--focus-ring-style);
+  outline-width: var(--focus-ring-width);
+}
+
+@supports selector(:focus-visible) {
+  :focus {
+    outline: none;
+  }
+
+  :focus-visible {
+    outline-color: var(--focus-ring-color);
+    outline-offset: var(--focus-ring-offset);
+    outline-style: var(--focus-ring-style);
+    outline-width: var(--focus-ring-width);
+  }
+}
+
+@supports (-moz-appearance: none) {
+  :root {
+    --focus-ring-offset: 0.2ex;
+  }
+}
+
+.cluster {
+  display: flex;
+  flex-direction: var(--cluster-flex-direction, row);
+  justify-content: var(--cluster-justify-content, flex-start);
+  align-items: var(--cluster-align-items, flex-start);
+  flex-wrap: var(--cluster-flex-wrap, wrap);
+  column-gap: var(--cluster-column-gap, 1em);
+  row-gap: var(--cluster-row-gap, 1em);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.container {
+  max-width: var(--container-measure, 1350px);
+  padding-inline: var(--container-padding-inline, var(--space-s-m));
+  margin-inline: auto;
+}
+
+.container[data-type-container="internal"] {
+  padding-inline: var(--container-internal-padding-inline, var(--space-xs-s));
+  padding-block: var(--container-internal-padding-block, var(--space-l));
+}
+
+.headline {
+  background-color: var(--headline-background-color, var(--color-dark));
+  color: var(--headline-text-color, var(--color-light));
+}
+
+.prose {
+  --flow-space: var(--space-m-l);
+  max-width: var(--prose-measure, 75ch);
+}
+
+header {
+  --cluster-column-gap: var(--space-l);
+  --cluster-row-gap: var(--space-2xs);
+  --cluster-justify-content: space-between;
+  --cluster-align-items: center;
+  --container-internal-padding-block: var(--space-s);
+  --global-a-text-decoration-line: none;
+  --global-a-font-weight: 700;
+  border-bottom: 1px solid var(--color-dark);
+}
+
+header a:hover {
+  --global-a-text-decoration-line: underline;
+}
+
+header img {
+  height: 4ex;
+}
+
+footer {
+  background-color: var(--global-footer-background-color);
+  color: var(--global-footer-text-color);
+}
