@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="container cluster" data-type-container="internal">
+          <a href="/"><img src="/logo.svg" alt="Gallant Servant - Home" /></a>
+          {% include "nav.html" %}
+        </div>
+      </div>
+    </header>
+    <main tabindex="-1">{{ content | safe }}</main>
+    <footer>
+      <div class="container">
+        <div class="container" data-type-container="internal">
+          <p>Copyright © 2025 Gallant Servant.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -238,6 +238,10 @@ a:not([class]):hover {
   text-decoration-thickness: 3px;
 }
 
+a[aria-current="page"] {
+  background-color: var(--color-light-shade);
+}
+
 :is(ol, ul) {
   margin-block-end: 0;
 }
